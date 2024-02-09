@@ -1,0 +1,106 @@
+.header_section {
+    position: fixed;
+    width: 100%;
+    top: 25px;
+    z-index: 9;
+}
+
+.headerStatic {
+    background: #fff;
+    position: static;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.headerStatic .header_right a {
+    color: #000;
+}
+
+.header_section {
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+.scrolled {
+    background-color: #fff;
+    /* Change to your desired scrolled background color */
+    top: 0;
+}
+
+.scrolled .header_right a {
+    color: #000;
+}
+
+.header_parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+
+.header_img img {
+    width: 200px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_right a {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.bar_active {
+    color: #fff;
+}
+
+.bar_active.active {
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .header_section {
+        top: 0;
+    }
+
+    .header_right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
+    }
+
+    .header_right.active {
+        left: 0;
+    }
+
+    .header_right a {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: initial;
+    }
+
+    .scrolled .header_right a {
+        color: #fff;
+    }
+}

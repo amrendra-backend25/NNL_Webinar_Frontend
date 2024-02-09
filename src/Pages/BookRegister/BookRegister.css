@@ -1,0 +1,42 @@
+.bookstore_section{
+    /* background: #f8f8f8; */
+    padding: 50px 0 20px;
+}
+.bookstore_part{display: grid; grid-template-columns: repeat(2, 1fr); background: #f8f8f8; padding: 80px 80px 50px;}
+.bookstore_left{padding-top: 20px;}
+.bookstore_left h2{font-size: 27px; font-weight: 600; color: #333; line-height: 30px; padding-bottom: 40px; text-transform: uppercase;}
+.bookstore_left h3{font-size: 27px; font-weight: 600; color: #333; line-height: 30px;}
+.bookstore_left p{font-size: 16px; font-weight: 500; color: #7a7a7a; line-height: 20px; padding-top: 5px;}
+.bookstore_right {text-align: right;}
+.bookstore_btn button{
+    background-color: #DD0E0E;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 40px;
+    line-height: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* ============================Responsive Tablet========================*/
+@media screen and (max-width:1024px){
+
+}
+
+@media screen and (max-width:768px){
+    .bookstore_part{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .bookstore_left h2{font-size: 20px; line-height: 25px; padding-bottom: 15px;}
+    .bookstore_left h3{font-size: 22px; line-height: 30px;}
+    .bookstore_left p{font-size: 14px;}
+    .bookstore_btn button {margin-top: 30px;}
+}

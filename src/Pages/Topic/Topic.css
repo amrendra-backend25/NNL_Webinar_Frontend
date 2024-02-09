@@ -1,0 +1,69 @@
+.topic_section{padding: 20px 0 0px;}
+.topic_title{display: grid; grid-template-columns: repeat(2, 1fr);}
+.topic_left{background: #0da184; padding: 40px 0px 40px 40px;}
+.topic_left_sub_title{padding-bottom: 30px; display: flex; gap: 20px;}
+.sub_title_icon_left{margin-top: 5px;}
+.sub_title_icon_left span {color: #fff; font-size: 25px;}
+.topic_left_sub_title .topic_infection_line{font-size: 25px; font-weight: 500; line-height: 38px; color: #fff;}
+.topic_left_sub_title .topic_infection_line span{padding-right: 10px;}
+.topic_left_sub_title .date_line{color: #fff; font-weight: 400;}
+.topic_left_sub_title .booking_div{display: flex; align-items: center; padding-top: 10px; justify-content: space-between;}
+.booking_div .booking_btn button{
+    background: #008673;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 1000;
+    border-radius: 60px;
+    color: #910505;
+    cursor: pointer;
+}
+.topic_left_sub_title .topic_infection{font-size: 25px; font-weight: 600; line-height: 38px; color: #fff;}
+.topic_left_sub_title .date_noline{color: #fff; font-weight: 400;}
+.down_line p{font-size: 16px; font-weight: 300; color: #fff;}
+.booking_icon_line{color: #fff; display: flex; gap: 5px;}
+.topic_left .down_line{padding-top: 100px; text-transform: capitalize;}
+
+.topic_right{background: #F6F6F6; padding: 40px;}
+.topic_right_sub_title .infection_right{color: #333; font-size: 30px; font-weight: 600; line-height: 40px;}
+.topic_right_sub_title .topic_sub{font-size: 24px; color: #333; line-height: 44px; font-weight: 600;}
+.topic_right .topic_para .topic_date{font-size: 17px; color: #7a7a7a; line-height: 20px; font-weight: 500;}
+.topic_right .topic_price{color: #DD0E0E; font-size: 30px; line-height: 40px; font-weight: 600; padding-top: 5px;}
+.topic_right .topic_price span{text-decoration: line-through; padding-right: 15px;}
+.div_item{margin-left: 20px; padding-top: 15px;}
+.div_item ul li{ color: #333; font-size: 15px; padding-bottom: 7px;}
+.green_icon{color: #008673; font-size: 12px;}
+.register_btn button{
+    background-color: #DD0E0E;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 40px;
+    line-height: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* ============================Responsive Tablet========================*/
+@media screen and (max-width:1024px){
+
+}
+
+@media screen and (max-width:768px){
+    .topic_title{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:500px){
+    .topic_left{padding: 40px 0px 40px 10px;}
+    .topic_left_sub_title .topic_infection_line{font-size: 18px;}
+    .topic_left_sub_title .topic_infection{font-size: 18px;}
+    .down_line p{font-size: 12px;}
+    .topic_right_sub_title .infection_right{font-size: 18px; line-height: 24px;}
+    .topic_right_sub_title .topic_sub{font-size: 18px; line-height: 26px; padding: 5px 0;}
+    .topic_right .topic_para .topic_date {font-size: 15px;}
+}

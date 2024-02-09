@@ -1,0 +1,65 @@
+.decode_success_section{
+    background-image: url("/images/success/decode.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+/* .decode_success_section::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+} */
+.decode_success_section{padding: 40px 0;}
+.decode_heading h2{font-size: 30px; font-weight: 600; line-height: 36px; color: #FFDA00;padding-bottom: 5px;}
+.decode_heading p{font-size: 18px; font-weight: 300; line-height: 22px; color: #fff;}
+.topic_parent{display: flex; justify-content: space-between; align-items: center; padding: 20px 0 20px;}
+.left_topic .topic_content_head{font-size: 36px; font-weight: 600; color: #fff; line-height: 45px;}
+.left_topic .topic_date{font-size: 20px; font-weight: 500; color: #fff; line-height: 30px; padding-top: 10px;}
+.left_topic .topic_mentor{font-size: 20px; font-weight: 500; color: #fff; line-height: 26px; padding: 15px 0;}
+.left_topic .topic_language{font-size: 20px; font-weight: 300; color: #fff; line-height: 26px;}
+.left_topic .topic_hour{font-size: 20px; font-weight: 400; color: #05ED00; line-height: 26px; padding: 15px 0;}
+.right_topic button{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #DD0E0E;
+    width: 260px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.topic_note .para_note{font-size: 22px; color: #fff; font-weight: 300; line-height: 28px;}
+
+/* ============================Responsive Tablet========================*/
+@media screen and (max-width:1024px){
+    .decode_heading h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .decode_heading p{font-size: 16px; line-height: 22px;}
+    .topic_parent{padding: 30px 0 20px;}
+    .left_topic .topic_content_head{font-size: 30px; line-height: 40px;}
+    .left_topic .topic_date{font-size: 16px; line-height: 22px;}
+    .left_topic .topic_mentor{font-size: 20px; line-height: 25px; padding: 10px 0;}
+    .left_topic .topic_language{font-size: 17px; line-height: 20px;}
+    .left_topic .topic_hour{font-size: 18px; padding: 10px 0; line-height: 26px;}
+    .right_topic button{font-size: 17px; width: 240px; height: 50px;}
+}
+
+@media screen and (max-width:500px){
+    .decode_heading{text-align: center;}
+    .decode_heading h2{font-size: 20px;}
+    .decode_heading p {line-height: 20px;}
+    .topic_parent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .right_topic button{margin: 20px 0;}
+    .topic_note{text-align: center;}
+}

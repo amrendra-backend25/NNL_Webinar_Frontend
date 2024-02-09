@@ -1,0 +1,124 @@
+.mentor_section{padding-top: 50px; position: relative; z-index: 0;}
+.mentor_section .master_slider_main .swiper {
+    padding: 2rem 0.5rem;
+    /* position: static; */
+  }
+.mentor_section .container{position: relative;}
+.master_slider_main .swiper{position: static;}
+.mastermind_img{position: relative;}  
+.mentor_section .mastermind_card{text-align: center; border-radius: 15px;}
+.mastermind_img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: #dd0e0ebd;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.mastermind_img .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+.mastermind_title{ padding-left: 10px;}
+.mastermind_title h4{color: #333; font-weight: 700; font-size: 20px; padding: 10px 0 5px;}
+.mastermind_title p{color: #666; font-weight: 400; font-size: 16px;}
+.mastermind_img .content a{color: #fff; font-size: 20px; padding: 0 10px;}
+.mastermind_img:hover .overlay{
+    opacity: 1;
+}
+.mentor_button .button_right{
+    position: absolute;
+    z-index: 10;
+    top: 8%;
+    left: 94%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex-direction: row-reverse;
+  }
+.mentor_button .button_right .button-next-slide {
+    color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #dfdfdf;
+    display: grid;
+    place-items: center;
+  }
+.mentor_button .button_right .button-prev-slide {
+    color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid#DFDFDF;
+    display: grid;
+    place-items: center;
+  }
+.mentor_button .button_left{
+    position: absolute;
+    top: 47px;
+    right: 82px;
+    text-decoration: underline;
+}
+.mentor_section .mentor_title h2{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #333;
+}
+.mentor_section .mentor_title p{
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+
+
+/* ============================Responsive Tablet========================*/
+@media screen and (max-width: 1024px){
+  .mentor_button .button_left {
+    top: 15px;
+    right: 58px;
+  }
+  .mentor_button .button_right{
+    top: 2%;
+  }
+  .mentor_section .mentor_title h2 {font-size: 28px; line-height: 33px;}
+  .mentor_section .mentor_title p{font-size: 13px; line-height: 18px; max-width: 700px;}
+}
+@media screen and (max-width: 768px){
+  .mentor_button .button_left {
+    top: 15px;
+    right: 45px;
+  }
+  .mentor_button .button_right{
+    top: 2%;
+  }
+  .mentor_section .mentor_title h2 {font-size: 28px; line-height: 33px;}
+  .mentor_section .mentor_title p{font-size: 13px; line-height: 18px; max-width: 500px;}
+}
+@media screen and (max-width: 500px){
+  .mentor_button .button_left {
+    top: 130px;
+    right: 15px;
+  }
+  .mentor_button .button_right{
+    top: 15%;
+    right: 20px;
+    display: none;
+  }
+  .mentor_section .mentor_title h2 {font-size: 28px; line-height: 33px;}
+  .mentor_section .mentor_title p{font-size: 13px; line-height: 18px; max-width: 500px;}
+}
